@@ -1,0 +1,17 @@
+# Required Python libraries for MinProtBert project
+
+# Data processing
+pandas
+numpy
+
+# Sequence processing
+biopython
+
+# Machine learning
+scikit-learn
+torch
+transformers
+
+# Visualization
+matplotlib
+seaborn
