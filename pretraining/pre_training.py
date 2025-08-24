@@ -226,7 +226,7 @@ gc.collect()
 # ---- Dataset loading ----
 if local_rank == 0:
     print("\n🔹 Loading tokenized data from arrow files...")
-directory = '../datasets/uniref50_tokenized/train'
+directory = '../datasets/uniref50/train'  # Adjusted path based on existing structure
 tokenized_dataset = load_arrow_files(directory, max_files=0)  
 
 if tokenized_dataset is None:

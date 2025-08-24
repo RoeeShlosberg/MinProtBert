@@ -15,3 +15,7 @@ transformers
 # Visualization
 matplotlib
 seaborn
+
+# External tools
+seqkit
+wget
