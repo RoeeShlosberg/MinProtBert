@@ -40,6 +40,19 @@ MinProtBert/
 - **pretraining/**: Scripts for pre-training the MinProtBERT model on large protein sequence datasets.
 - **savings/**: Stores logs, results, and trained models.
 
+## Datasets
+The datasets used in this project are essential for training and evaluating MinProtBERT across various bioinformatics tasks. These datasets were manually curated and downloaded from publicly available repositories. Below is a brief overview of the datasets:
+
+- **DNA-binding proteins**: Located in `datasets/original_dna_binding`. This dataset includes sequences labeled for their ability to bind DNA, used for the DNA-binding classification task.
+- **Secondary structure prediction**: Located in `datasets/secondary_structure`. This dataset contains protein sequences annotated with secondary structure labels (Q3: Helix, Strand, Coil).
+- **Membrane protein classification**: Located in `datasets/membrane_soulable`. This dataset includes sequences labeled as membrane or soluble proteins, used for the Q2 classification task.
+
+### Dataset Usage
+1. **Manual Download**: The datasets must be manually downloaded from their respective sources (e.g., UniProt, CASP, DeepLoc) and placed in the appropriate directories under `datasets/`.
+2. **Preprocessing**: Use the scripts in `data_processing/` to preprocess the datasets, including filtering, splitting, and formatting for training.
+
+For detailed instructions on obtaining and preparing the datasets, refer to the [Summary Report](./דוח%20סיכום.docx).
+
 ## DNA-Binding Classification
 The DNA-binding classification task involves multiple runs to evaluate the model's performance under different conditions:
 - **Full Dataset**: Training and testing on the complete dataset.
