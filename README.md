@@ -41,7 +41,7 @@ MinProtBert/
 ├── finetunes/ # Fine-tuning scripts (dna_binding, Q2, Q3)
 ├── pretraining/ # Pre-training script for MinProtBERT
 ├── savings/ # Trained models, logs, and scores
-├── דוח סיכום.docx # Full written report (submitted document)
+├── MinProtBert_Report.docx # Full written report (submitted document)
 ├── requirements.txt # Project dependencies
 └── README.md
 ```
@@ -62,7 +62,7 @@ All datasets used in this project were **manually downloaded from public sources
 | **UniRef50**              | Large pretraining corpus, clustered at 50%           | `datasets/uniref50/`                  | Requires preprocessing         |
 | **Deep-WET benchmark**    | External DNA-binding benchmark dataset               | `datasets/deepWet_dna_binding/`        | Manual download               |
 
-For detailed instructions on obtaining and preparing the datasets, refer to the **[דוח סיכום.docx](./דוח%20סיכום.docx)**.
+For detailed instructions on obtaining and preparing the datasets, refer to the **[MinProtBert Report](./MinProtBert_Report.docx)**.
 
 ---
 
@@ -103,7 +103,7 @@ python pretraining/pre_training.py
   python finetunes/q2/finetune_q2.py
   ```
 
-Note: These scripts were used in the experiments documented in the **[דוח סיכום.docx](./דוח%20סיכום.docx)** and are provided for reference only.
+Note: These scripts were used in the experiments documented in the **[Report](./MinProtBert_Report.docx)** and are provided for reference only.
 
 ---
 
@@ -114,7 +114,7 @@ MinProtBERT achieves nearly identical performance to ProteinBERT across all eval
 - **Secondary structure prediction (Q3)**: ~66% runtime reduction.
 - **Membrane protein classification (Q2)**: ~16% runtime reduction, with improved accuracy.
 
-For detailed results and discussion, see the **[דוח סיכום.docx](./דוח%20סיכום.docx)**.
+For detailed results and discussion, see the **[Project Report](./MinProtBert_Report.docx)**.
 
 ---
 
@@ -128,4 +128,4 @@ For detailed results and discussion, see the **[דוח סיכום.docx](./דוח
 ---
 
 ## Citation
-If you use MinProtBERT report and its insights in your research, please cite this repository and refer to the **[דוח סיכום.docx](./דוח%20סיכום.docx)** for methodology and results.
+If you use MinProtBERT report and its insights in your research, please cite this repository and refer to the **[MinProtBert_Report.docx](./MinProtBert_Report.docx)** for methodology and results.
